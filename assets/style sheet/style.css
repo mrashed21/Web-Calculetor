@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+header p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 30px 0;
+  color: #ff3f34;
+}
+ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 50px 70px;
+  align-items: center;
+  justify-content: center;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #0097e6;
+  color: #fff;
+  display: block;
+  margin: 7px 0;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+}
+ul li a:hover {
+  color: #ff0000;
+  background-color: #dfe4ea;
+}
+.cal-name {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff0000;
+  margin: 60px auto 30px auto;
+}
+span {
+  position: fixed;
+  right: 5px;
+  bottom: 10px;
+  text-align: center;
+  background-color: #ea2027;
+  padding: 7px;
+  border-radius: 6px;
+  line-height: 17px;
+  transition: 0.4s ease-in-out;
+}
+span a {
+  color: #ff0000;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+}
+span:hover {
+  background-color: #7f8fa6;
+}
+span:hover a {
+  color: #fff;
+}
+.card {
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  font-size: 0;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(54, 54, 53, 0.87);
+}
+.calc-head {
+  margin-top: 10px;
+}
+.calc-head #result {
+  width: 350px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: right;
+  padding: 0 5px;
+  letter-spacing: 1px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.btn {
+  width: 87px;
+  height: 70px;
+  background-color: rgb(41, 37, 37);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.gray {
+  background-color: gray;
+}
+.btn-style1 {
+  background-color: orange;
+}
+.btn-style {
+  background-color: rgb(48, 48, 131);
+  border-bottom-right-radius: 10px;
+}
+.btn:hover {
+  background-color: rgb(112, 199, 170);
+}
+.brdr {
+  border-bottom-left-radius: 10px;
+}
+
+.dispaly-box {
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  gap: 2%;
+}
+.dispaly-box:last-child {
+  margin-bottom: 50px;
+}
+.flex {
+  width: 50%;
+  border-radius: 9px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.user-input {
+  background-color: #dfe4ea;
+  padding: 15px;
+}
+.display-result {
+  background-color: #f1f2f6;
+}
+.flex-head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.user-input .image {
+  width: 120px;
+  height: 120px;
+}
+.user-input img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.user-input .formula {
+  color: #ff4757;
+  font-size: 20px;
+  font-weight: 600;
+}
+.user-input .enter {
+  font-size: 25px;
+  color: #e84118;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+}
+.user-input .input-value {
+  width: 85%;
+  margin: 0 auto;
+}
+.user-input .input-value input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 7px;
+  font-size: 17px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.user-input .input-value .enterValue {
+  font-size: 18px;
+  padding: 5px 0;
+  font-weight: 500;
+  color: #1b1464;
+}
+.hide {
+  display: none;
+}
+.error {
+  color: #ff465a;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+::placeholder {
+  color: #7f8fa6;
+}
+.calculateBtn {
+  background-color: #3867d6;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.calculateBtn:hover {
+  color: #000000;
+  background-color: #0652dd;
+}
+.display-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-display h1 {
+  font-size: 2rem;
+  color: #ea2027;
+  font-weight: 700;
+  text-align: center;
+}
+.show-display p {
+  font-size: 1.3rem;
+  color: #0652dd;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+}
+.displayValue {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dispaly-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .flex {
+    width: 100%;
+  }
+  .user-input .formula {
+    font-size: 16px;
+  }
+  .display-result {
+    padding: 20px;
+  }
+}

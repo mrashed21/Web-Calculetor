@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculation Master Web Application</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/image/favicon.ico"
+      type="image/x-icon"
+    />
+    <!------Link CSS File------>
+    <link rel="stylesheet" href="./assets/style sheet/style.css" />
+  </head>
+  <body>
+    <!------Start Header section------>
+    <section>
+      <header>
+        <h1>Calculation Master Web Application</h1>
+        <p>Developed By Muhammad Rashed</p>
+        <div class="list">
+          <ul>
+            <li><a href="#basic-calculator"> Basic Calculator</a></li>
+            <li><a href="#fahrenheit">Celsius</a></li>
+            <li><a href="#celsius">Fahrenheit</a></li>
+            <li><a href="#area-of-circle">Circle</a></li>
+            <li><a href="#area-of-rectangle">Rectangle</a></li>
+            <li><a href="#area-of-square">Square</a></li>
+            <li><a href="#area-of-triangle">Triangle</a></li>
+            <li><a href="#area-of-parallelogram">Parallelogram</a></li>
+            <li><a href="#area-of-rhombus">Rhombus</a></li>
+            <li><a href="#area-of-trapezoid">Trapezoid</a></li>
+            <li><a href="#area-of-ellipse">Ellipse</a></li>
+            <li><a href="#area-of-cube">Cube</a></li>
+          </ul>
+        </div>
+        <span
+          ><a href="#">Back <br />Top</a></span
+        >
+      </header>
+    </section>
+    <!------End Header Section------>
+    <!-------------------------------------------------->
+    <!------Start Basic Calculator Section------>
+    <section id="basic-calculator">
+      <div class="basic-calculator">
+        <h1 class="cal-name">Basic Calculator</h1>
+        <div class="card">
+          <div class="calc-head">
+            <input type="text" id="result" maxlength="11" readonly />
+            <div class="calc-body">
+              <div>
+                <button class="btn gray">AC</button>
+                <button class="btn gray">DEL</button>
+                <button class="btn gray">%</button>
+                <button class="btn btn-style1">/</button>
+              </div>
+
+              <div>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn btn-style1">*</button>
+              </div>
+
+              <div>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn btn-style1">-</button>
+              </div>
+
+              <div>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn btn-style1">+</button>
+              </div>
+
+              <div>
+                <button class="btn brdr">0</button>
+                <button class="btn">00</button>
+                <button class="btn">.</button>
+                <button class="btn btn-style">=</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------End Basic Calculator Section------>
+    <!-------------------------------------------------------->
+    <!------Start Fahrenheit to Celsius Calculator------>
+    <section id="fahrenheit">
+      <h2 class="cal-name">Fahrenheit to Celsius</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/temperature.jpg" alt="temperature" />
+            </div>
+            <div class="text">
+              <p class="formula">(32°F − 32) X 5/9 = 0°C</p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Fahrenheit Value:</p>
+            <p class="hide error" id="fahrenheit-error"></p>
+            <input
+              id="fahrenheitValue"
+              type="number"
+              placeholder="Enter Fahrenheit Value"
+            />
+            <br />
+            <br />
+            <input
+              id="fahrenheitCalculate"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Celsius Value is..</p>
+            <input
+              id="showCelsiusValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Fahrenheit to Celsius Calculator------>
+    <!-------------------------------------------------------->
+    <!------Start Celsius to Fahrenheit Calculator------>
+    <section id="celsius">
+      <h2 class="cal-name">Celsius to Fahrenheit</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/celsius.jpg" alt="temperature" />
+            </div>
+            <div class="text">
+              <p class="formula">°F = °C X (9/5)+32</p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Celsius Value:</p>
+            <p class="hide error" id="celsius-error"></p>
+            <input
+              id="celsiusValue"
+              type="number"
+              placeholder="Enter Celsius Value"
+            />
+            <br />
+            <br />
+            <input
+              id="celsiusCalculate"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Fahrenheit Value is..</p>
+            <input
+              id="showFahrenheitValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Celsius to Fahrenheit Calculator------>
+    <!------------------------------------------->
+    <!------Start Area of Circle Section------>
+    <section id="area-of-circle">
+      <h2 class="cal-name">Area of Circle</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/circle.jpg" alt="circle" />
+            </div>
+            <div class="text">
+              <p class="formula">Area = π X r<sup>2</sup></p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Radius Value:</p>
+            <p class="hide error" id="circle-error"></p>
+            <input
+              id="radiusValue"
+              type="number"
+              placeholder="Enter Radius of Circle"
+            />
+            <br />
+            <br />
+            <input
+              id="circleCalculate"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Area of Circle is..</p>
+            <input
+              id="showRadiusValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Area of Circle Section------>
+    <!------------------------------------------->
+    <!------Start Area of Rectangle Section------>
+    <section id="area-of-rectangle">
+      <h2 class="cal-name">Area of Rectangle</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/rectangle.png" alt="rectangle" />
+            </div>
+            <div class="text">
+              <p class="formula">Area = l X w</p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Length:</p>
+            <p class="hide error" id="rectangle-errorLength"></p>
+            <input
+              id="rectangleLengthValue"
+              type="number"
+              placeholder="Enter length of Rectangle"
+            />
+            <br />
+            <p class="enterValue">Enter Width:</p>
+            <p class="hide error" id="rectangle-errorWidth"></p>
+            <input
+              id="rectangleWidthValue"
+              type="number"
+              placeholder="Enter Width of Rectangle"
+            />
+            <br />
+            <br />
+            <input
+              id="calculateRectangle"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Area of Rectangle is..</p>
+            <input
+              id="showRectangleValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Area of Rectangle Section------>
+    <!------------------------------------------->
+    <!------Start Area of Square Section------>
+    <section id="area-of-square">
+      <h2 class="cal-name">Area of Square</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/square.png" alt="square" />
+            </div>
+            <div class="text">
+              <p class="formula">Area = a<sup>2</sup></p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Length:</p>
+            <p class="hide error" id="square-error"></p>
+            <input
+              id="squareValue"
+              type="number"
+              placeholder="Enter Length of Square"
+            />
+            <br />
+            <br />
+            <input
+              id="squarecalculate"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Area of Square is..</p>
+            <input
+              id="showSquareValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Area of Square Section------>
+    <!------------------------------------------->
+    <!------Start Area of Triangle Section------>
+    <section id="area-of-triangle">
+      <h2 class="cal-name">Area of Triangle</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/triangle.png" alt="triangle" />
+            </div>
+            <div class="text">
+              <p class="formula">Area = 1/2 X b X h</p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Base:</p>
+            <p class="hide error" id="triangle-errorBase"></p>
+            <input
+              id="triangleBaseValue"
+              type="number"
+              placeholder="Enter Base of Triangle"
+            />
+            <br />
+            <p class="enterValue">Enter Height:</p>
+            <p class="hide error" id="triangle-errorHeight"></p>
+            <input
+              id="triangleHeightValue"
+              type="number"
+              placeholder="Enter Height of Triangle"
+            />
+            <br />
+            <br />
+            <input
+              id="calculateTriangle"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Area of Triangle is..</p>
+            <input
+              id="showTriangleValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Area of Triangle Section------>
+    <!------------------------------------------->
+    <!------Start Area of Parallelogram Section------>
+    <section id="area-of-parallelogram">
+      <h2 class="cal-name">Area of Parallelogram</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/parallelogram.png" alt="parallelogram" />
+            </div>
+            <div class="text">
+              <p class="formula">Area = b X h</p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Base:</p>
+            <p class="hide error" id="parallelogram-errorBase"></p>
+            <input
+              id="parallelogramBaseValue"
+              type="number"
+              placeholder="Enter Base of Parallelogram"
+            />
+            <br />
+            <p class="enterValue">Enter Height:</p>
+            <p class="hide error" id="parallelogram-errorHeight"></p>
+            <input
+              id="parallelogramHeightValue"
+              type="number"
+              placeholder="Enter Height of Parallelogram"
+            />
+            <br />
+            <br />
+            <input
+              id="calculateParallelogram"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Area of Parallelogram is..</p>
+            <input
+              id="showParallelogramValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Area of Parallelogram Section------>
+    <!------------------------------------------->
+    <!------Start Area of Rhombus Section------>
+    <section id="area-of-rhombus">
+      <h2 class="cal-name">Area of Rhombus</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/rhombus.jpg" alt="rhombus" />
+            </div>
+            <div class="text">
+              <p class="formula">Area = 1/2 X d1 X d2</p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Frist Diagonal:</p>
+            <p class="hide error" id="rhombus-errorFristDiagonal"></p>
+            <input
+              id="rhombusFristDiagonal"
+              type="number"
+              placeholder="Enter Frist Diagonal of Rhombus"
+            />
+            <br />
+            <p class="enterValue">Enter Second Diagonal:</p>
+            <p class="hide error" id="rhombus-errorSecondDiagonal"></p>
+            <input
+              id="rhombusSecondDiagonal"
+              type="number"
+              placeholder="Enter Second Diagonal of Rhombus"
+            />
+            <br />
+            <br />
+            <input
+              id="calculateRhombus"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Area of Rhombus is..</p>
+            <input
+              id="showRhombusValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Area of Rhombus Section------>
+    <!------------------------------------------->
+    <!------Start Area of Trapezoid Section------>
+    <section id="area-of-trapezoid">
+      <h2 class="cal-name">Area of Trapezoid</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/trapezoid.png" alt="trapezoid" />
+            </div>
+            <div class="text">
+              <p class="formula">Area = 1/2 X (a+b) X h</p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Frist Base:</p>
+            <p class="hide error" id="trapezoid-errorFristBase"></p>
+            <input
+              id="trapezoidFristBaseValue"
+              type="number"
+              placeholder="Enter Frist Base of Trapezoid"
+            />
+            <br />
+            <p class="enterValue">Enter Second Base:</p>
+            <p class="hide error" id="trapezoid-errorSecondBase"></p>
+            <input
+              id="trapezoidSecondBaseValue"
+              type="number"
+              placeholder="Enter Second Base of Trapezoid"
+            />
+            <br />
+            <p class="enterValue">Enter Height:</p>
+            <p class="hide error" id="trapezoid-errorHeight"></p>
+            <input
+              id="trapezoidHeightValue"
+              type="number"
+              placeholder="Enter Height Trapezoid"
+            />
+            <br />
+            <br />
+            <input
+              id="calculateTrapezoid"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Area of Trapezoid is..</p>
+            <input
+              id="showTrapezoidValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Area of Trapezoid Section------>
+    <!------------------------------------------->
+    <!------Start Area of Ellipse Section------>
+    <section id="area-of-ellipse">
+      <h2 class="cal-name">Area of Ellipse</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/ellipse..png" alt="ellipse" />
+            </div>
+            <div class="text">
+              <p class="formula">Area = π X a X b</p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Major Axis:</p>
+            <p class="hide error" id="ellipse-errorMajorAxis"></p>
+            <input
+              id="ellipseMajorAxisValue"
+              type="number"
+              placeholder="Enter Major Axis of Ellipse"
+            />
+            <br />
+            <p class="enterValue">Enter Minor Axis:</p>
+            <p class="hide error" id="ellipse-errorMinorAxis"></p>
+            <input
+              id="ellipseMinorAxisValue"
+              type="number"
+              placeholder="Enter Minor Axis of Ellipse"
+            />
+            <br />
+            <br />
+            <input
+              id="calculateEllipse"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Area of Ellipse is..</p>
+            <input
+              id="showEllipseValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Area of Ellipse Section------>
+    <!------------------------------------------->
+    <!------Start Area of Cube Section------>
+    <section id="area-of-cube">
+      <h2 class="cal-name">Area of Cube</h2>
+      <!-- Start Display Box -->
+      <div class="dispaly-box">
+        <!-- Strat user Input -->
+        <div class="user-input flex">
+          <div class="flex-head">
+            <div class="image">
+              <img src="./assets/image/cube.png" alt="cube" />
+            </div>
+            <div class="text">
+              <p class="formula">Area = 6 X a<sup>2</sup></p>
+            </div>
+          </div>
+          <p class="enter">Enter Value...</p>
+          <div class="input-value">
+            <p class="enterValue">Enter Height:</p>
+            <p class="hide error" id="cube-error"></p>
+            <input
+              id="cubeHeightValue"
+              type="number"
+              placeholder="Enter Height of Cube"
+            />
+            <br />
+            <br />
+            <input
+              id="Cubecalculate"
+              class="calculateBtn"
+              type="submit"
+              value="Calculate"
+            />
+          </div>
+        </div>
+        <!-- End User Input -->
+        <!----------------------->
+        <!-- Start Display Result -->
+        <div class="display-result flex">
+          <div class="show-display">
+            <h1>Result:</h1>
+            <p>Area of Cube is..</p>
+            <input
+              id="showCubeValue"
+              class="displayValue"
+              type="text"
+              readonly
+            />
+          </div>
+        </div>
+        <!-- End Display Result -->
+      </div>
+      <!-- End Display Box -->
+    </section>
+    <!------End Area of Cube Section------>
+
+    <!------Link JavaSCript File------>
+    <script src="./assets/javaScript/script.js"></script>
+  </body>
+</html>
