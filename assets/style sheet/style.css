@@ -147,7 +147,7 @@ span:hover a {
   gap: 2%;
 }
 .dispaly-box:last-child {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .flex {
   width: 50%;
@@ -269,12 +269,23 @@ span:hover a {
 }
 
 @media only screen and (max-width: 768px) {
+  .user-input .image {
+    width: 70px;
+    height: 70px;
+  }
   .dispaly-box {
     flex-direction: column;
     gap: 30px;
+    width: 100%;
+  }
+  .dispaly-box:last-child {
+    margin-bottom: 80px;
   }
   .flex {
     width: 100%;
+  }
+  .flex-head {
+    gap: 50px;
   }
   .user-input .formula {
     font-size: 16px;
